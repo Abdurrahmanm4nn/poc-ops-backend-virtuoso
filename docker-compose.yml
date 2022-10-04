@@ -1,10 +1,9 @@
-version: "0.2.8"
+version: "3.7"
 services:
-  web:
+  pocketbase:
     build:
-      context: testdockerazure
       dockerfile: Dockerfile
+    image: virtuosopocops.azurecr.io/ops-poc-test:v1
     ports:
       - "8090:8090"
       - "5000:5000"
-  
